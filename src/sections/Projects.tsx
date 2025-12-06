@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Code2 } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
 
 const projects = [
     {
@@ -59,6 +60,8 @@ const projects = [
 ];
 
 export const Projects = () => {
+    const { t } = useLanguage();
+    
     return (
         <section id="projects" className="section relative">
             <div className="container mx-auto px-6">
@@ -71,13 +74,13 @@ export const Projects = () => {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
                         <Code2 size={14} className="text-blue-400" />
-                        <span className="text-sm font-medium text-gray-300">My Work</span>
+                        <span className="text-sm font-medium text-gray-300">{t('projects.work')}</span>
                     </div>
                     <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                        Featured <span className="text-gradient-accent">Projects</span>
+                        {t('projects.title')}
                     </h2>
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                        A collection of projects that showcase my skills in building modern, scalable, and user-friendly applications.
+                        {t('projects.subtitle')}
                     </p>
                 </motion.div>
 
@@ -156,7 +159,7 @@ export const Projects = () => {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-white/10 hover:bg-white/5 transition-all text-white font-medium group"
                     >
-                        <span>View All Projects</span>
+                        <span>{t('projects.viewAll')}</span>
                         <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
                     </a>
                 </motion.div>

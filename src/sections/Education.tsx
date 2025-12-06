@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { GraduationCap, Calendar, Award } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
 
 const education = [
     {
@@ -38,6 +39,8 @@ const education = [
 ];
 
 export const Education = () => {
+    const { t } = useLanguage();
+    
     return (
         <section id="education" className="section relative">
             <div className="container mx-auto px-6">
@@ -50,13 +53,13 @@ export const Education = () => {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
                         <GraduationCap size={14} className="text-blue-400" />
-                        <span className="text-sm font-medium text-gray-300">Academic Background</span>
+                        <span className="text-sm font-medium text-gray-300">{t('education.background')}</span>
                     </div>
                     <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                        <span className="text-gradient-accent">Education</span>
+                        <span className="text-gradient-accent">{t('education.title')}</span>
                     </h2>
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                        My academic journey and educational achievements.
+                        {t('education.subtitle')}
                     </p>
                 </motion.div>
 

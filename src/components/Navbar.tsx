@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
+import { ThemeToggle } from './ThemeToggle';
+import { LanguageToggle } from './LanguageToggle';
 
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { t } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,11 +19,11 @@ export const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'About', href: '#about' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Education', href: '#education' },
-        { name: 'Contact', href: '#contact' },
+        { name: t('nav.about'), href: '#about' },
+        { name: t('nav.projects'), href: '#projects' },
+        { name: t('nav.experience'), href: '#experience' },
+        { name: t('nav.education'), href: '#education' },
+        { name: t('nav.contact'), href: '#contact' },
     ];
 
     return (
@@ -61,7 +65,9 @@ export const Navbar = () => {
 
                         <div className="w-[1px] h-6 bg-white/10"></div>
 
-                        <div className="flex gap-4">
+                        <div className="flex items-center gap-3">
+                            <ThemeToggle />
+                            <LanguageToggle />
                             <SocialLink href="https://github.com/KhnhMinh" icon={<Github size={18} />} />
                             <SocialLink href="https://www.linkedin.com/in/minh-le-khanh-892bbb365/" icon={<Linkedin size={18} />} />
                         </div>
@@ -111,10 +117,16 @@ export const Navbar = () => {
                                 ))}
                             </div>
 
-                            <div className="flex justify-center gap-8 pb-12">
-                                <SocialLink href="#" icon={<Github size={24} />} />
-                                <SocialLink href="#" icon={<Linkedin size={24} />} />
-                                <SocialLink href="#" icon={<Mail size={24} />} />
+                            <div className="flex flex-col items-center gap-6 pb-12">
+                                <div className="flex gap-4">
+                                    <ThemeToggle />
+                                    <LanguageToggle />
+                                </div>
+                                <div className="flex justify-center gap-8">
+                                    <SocialLink href="https://github.com/KhnhMinh" icon={<Github size={24} />} />
+                                    <SocialLink href="https://www.linkedin.com/in/minh-le-khanh-892bbb365/" icon={<Linkedin size={24} />} />
+                                    <SocialLink href="mailto:lekhanhminh@example.com" icon={<Mail size={24} />} />
+                                </div>
                             </div>
                         </div>
                     </motion.div>

@@ -1,18 +1,20 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { TypingAnimation } from '../components/TypingAnimation';
-
-const roles = [
-    'a Master\'s Candidate',
-    'a Bachelor\'s Graduate',
-    'a Researcher',
-    'a Software Engineer',
-    'a Full-Stack Developer',
-    'an AI Enthusiast',
-    'a Problem Solver',
-];
+import { useLanguage } from '../hooks/useLanguage';
 
 export const Hero = () => {
+    const { t } = useLanguage();
+    
+    const roles = [
+        t('role.masters'),
+        t('role.bachelors'),
+        t('role.researcher'),
+        t('role.engineer'),
+        t('role.developer'),
+        t('role.ai'),
+        t('role.solver'),
+    ];
     return (
         <section id="home" className="min-h-screen flex items-center relative pt-20">
             <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -26,7 +28,7 @@ export const Hero = () => {
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm"
                     >
                         <Sparkles size={14} className="text-yellow-400" />
-                        <span className="text-sm font-medium text-gray-300">Available for opportunities</span>
+                        <span className="text-sm font-medium text-gray-300">{t('hero.available')}</span>
                     </motion.div>
 
                     <motion.h1
@@ -35,7 +37,7 @@ export const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="text-5xl md:text-7xl font-bold leading-tight mb-2"
                     >
-                        <span className="block text-gray-200">Hello from</span>
+                        <span className="block text-gray-200">{t('hero.hello')}</span>
                         <span className="block text-gradient-accent mb-2">Le Khanh Minh</span>
                         <span className="block text-base md:text-lg text-gray-400 font-normal mt-2">(Lê Khánh Minh)</span>
                     </motion.h1>
@@ -46,7 +48,7 @@ export const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="text-lg md:text-xl text-gray-300 mb-8 max-w-lg leading-relaxed"
                     >
-                        <span>I am </span>
+                        <span>{t('hero.iam')} </span>
                         <TypingAnimation 
                             roles={roles} 
                             className="text-blue-400 font-semibold"
@@ -59,8 +61,7 @@ export const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="text-base md:text-lg text-gray-400 mb-8 max-w-lg leading-relaxed"
                     >
-                        Building dependable, thoughtfully designed systems that are genuinely useful. 
-                        Exploring AI and machine learning to enhance real-world applications.
+                        {t('hero.description')}
                     </motion.p>
 
                     <motion.div

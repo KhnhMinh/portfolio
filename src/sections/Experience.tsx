@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
 
 const experiences = [
     {
@@ -54,6 +55,8 @@ const skills = [
 ];
 
 export const Experience = () => {
+    const { t } = useLanguage();
+    
     return (
         <section id="experience" className="section relative">
             <div className="container mx-auto px-6">
@@ -66,13 +69,13 @@ export const Experience = () => {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
                         <Briefcase size={14} className="text-cyan-400" />
-                        <span className="text-sm font-medium text-gray-300">Career Journey</span>
+                        <span className="text-sm font-medium text-gray-300">{t('experience.journey')}</span>
                     </div>
                     <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                        Work <span className="text-gradient-accent">Experience</span>
+                        {t('experience.title')}
                     </h2>
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                        A timeline of my professional journey, highlighting key roles and achievements.
+                        {t('experience.subtitle')}
                     </p>
                 </motion.div>
 
@@ -162,7 +165,7 @@ export const Experience = () => {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="max-w-5xl mx-auto"
                 >
-                    <h3 className="text-3xl font-bold mb-8 text-center">Skills & Expertise</h3>
+                    <h3 className="text-3xl font-bold mb-8 text-center">{t('experience.skills')}</h3>
                     <div className="grid md:grid-cols-2 gap-6">
                         {skills.map((skillGroup, index) => (
                             <motion.div

@@ -5,8 +5,10 @@ import { Projects } from './sections/Projects';
 import { Experience } from './sections/Experience';
 import { Education } from './sections/Education';
 import { Contact } from './sections/Contact';
+import { useLanguage } from './hooks/useLanguage';
 
 function App() {
+    const { t } = useLanguage();
   return (
     <main className="relative min-h-screen overflow-x-hidden">
       {/* Dynamic Background */}
@@ -28,10 +30,10 @@ function App() {
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Le Khanh Minh. All rights reserved.
+              © {new Date().getFullYear()} Le Khanh Minh. {t('footer.rights')}
             </p>
             <p className="text-gray-400 text-sm">
-              Built with <span className="text-blue-400">React</span> + <span className="text-cyan-400">TypeScript</span> + <span className="text-sky-400">Tailwind CSS</span>
+              {t('footer.built')} <span className="text-blue-400">React</span> + <span className="text-cyan-400">TypeScript</span> + <span className="text-sky-400">Tailwind CSS</span>
             </p>
           </div>
         </div>

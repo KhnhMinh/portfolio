@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Code, Zap, Target } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
 
 const skills = [
     { name: 'Full-Stack Development', icon: <Code size={24} />, color: 'from-orange-500 to-orange-400' },
@@ -14,6 +15,8 @@ const techStack = [
 ];
 
 export const About = () => {
+    const { t } = useLanguage();
+    
     return (
         <section id="about" className="section relative">
             <div className="container mx-auto px-6">
@@ -25,10 +28,10 @@ export const About = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                        About <span className="text-gradient-accent">Me</span>
+                        {t('about.title')}
                     </h2>
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                        Passionate developer crafting digital experiences with modern technologies
+                        {t('about.subtitle')}
                     </p>
                 </motion.div>
 
@@ -62,13 +65,13 @@ export const About = () => {
                             
                             <div className="relative z-10">
                                 <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                                    Hello, I'm <strong className="text-white">Le Khanh Minh</strong>. I'm a software engineer who enjoys building systems that are dependable, thoughtfully designed, and genuinely useful. I approach my work with professionalism and curiosity, but I also believe that a positive attitude and a sense of humor make collaboration more effective and enjoyable.
+                                    {t('about.intro1')}
                                 </p>
                                 <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                                    I'm currently expanding my interests into AI and machine learning, exploring how intelligent tools can enhance real-world applications and improve the way teams build and operate software. I appreciate challenges that push me to grow, refine my thinking, and learn new perspectives.
+                                    {t('about.intro2')}
                                 </p>
                                 <p className="text-lg text-gray-300 leading-relaxed">
-                                    I value clear communication, kindness, and a practical engineering mindset. Whether I'm solving a complex technical problem or working with teammates, I aim to bring both competence and approachability. I'm always open to connecting with people who share the same drive for learning, building, and creating meaningful work.
+                                    {t('about.intro3')}
                                 </p>
                             </div>
                         </motion.div>

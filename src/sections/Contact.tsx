@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Mail, Send, Github, Linkedin, MapPin, Phone } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
 
 export const Contact = () => {
+    const { t } = useLanguage();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -15,7 +17,7 @@ export const Contact = () => {
         console.log('Form submitted:', formData);
         // Reset form
         setFormData({ name: '', email: '', message: '' });
-        alert('Thank you for your message! I will get back to you soon.');
+        alert(t('contact.success'));
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -37,13 +39,13 @@ export const Contact = () => {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
                         <Mail size={14} className="text-blue-400" />
-                        <span className="text-sm font-medium text-gray-300">Get In Touch</span>
+                        <span className="text-sm font-medium text-gray-300">{t('contact.getInTouch')}</span>
                     </div>
                     <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                        Let's <span className="text-gradient-accent">Connect</span>
+                        {t('contact.title')}
                     </h2>
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                        Have a project in mind or want to collaborate? I'd love to hear from you. Send me a message and I'll respond as soon as possible.
+                        {t('contact.subtitle')}
                     </p>
                 </motion.div>
 
@@ -57,9 +59,9 @@ export const Contact = () => {
                         className="space-y-6"
                     >
                         <div>
-                            <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+                            <h3 className="text-2xl font-bold mb-6">{t('contact.info')}</h3>
                             <p className="text-gray-400 mb-8 leading-relaxed">
-                                Feel free to reach out through any of these channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                                {t('contact.infoDesc')}
                             </p>
                         </div>
 
@@ -72,7 +74,7 @@ export const Contact = () => {
                                     <Mail size={20} />
                                 </div>
                                 <div>
-                                    <p className="text-sm text-gray-400">Email</p>
+                                    <p className="text-sm text-gray-400">{t('contact.email')}</p>
                                     <p className="text-white font-medium">khnhminh.le@gmail.com</p>
                                 </div>
                             </a>
@@ -85,7 +87,7 @@ export const Contact = () => {
                                     <Phone size={20} />
                                 </div>
                                 <div>
-                                    <p className="text-sm text-gray-400">Phone</p>
+                                    <p className="text-sm text-gray-400">{t('contact.phone')}</p>
                                     <p className="text-white font-medium">+84 96 298 1702</p>
                                 </div>
                             </a>
@@ -95,7 +97,7 @@ export const Contact = () => {
                                     <MapPin size={20} />
                                 </div>
                                 <div>
-                                    <p className="text-sm text-gray-400">Location</p>
+                                    <p className="text-sm text-gray-400">{t('contact.location')}</p>
                                     <p className="text-white font-medium">Ha Noi City, Vietnam</p>
                                 </div>
                             </div>
@@ -103,7 +105,7 @@ export const Contact = () => {
 
                         {/* Social Links */}
                         <div className="pt-6">
-                            <p className="text-sm text-gray-400 mb-4">Follow me on</p>
+                            <p className="text-sm text-gray-400 mb-4">{t('contact.follow')}</p>
                             <div className="flex gap-4">
                                 <a
                                     href="https://github.com/KhnhMinh"
@@ -135,7 +137,7 @@ export const Contact = () => {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                                    Name
+                                    {t('contact.name')}
                                 </label>
                                 <input
                                     type="text"
@@ -145,13 +147,13 @@ export const Contact = () => {
                                     onChange={handleChange}
                                     required
                                     className="w-full px-4 py-3 rounded-xl bg-gray-900/40 backdrop-blur-xl border border-white/10 focus:border-blue-500 focus:outline-none text-white placeholder-gray-500 transition-all"
-                                    placeholder="Your name"
+                                    placeholder={t('contact.namePlaceholder')}
                                 />
                             </div>
 
                             <div>
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                                    Email
+                                    {t('contact.email')}
                                 </label>
                                 <input
                                     type="email"
@@ -161,13 +163,13 @@ export const Contact = () => {
                                     onChange={handleChange}
                                     required
                                     className="w-full px-4 py-3 rounded-xl bg-gray-900/40 backdrop-blur-xl border border-white/10 focus:border-blue-500 focus:outline-none text-white placeholder-gray-500 transition-all"
-                                    placeholder="your.email@example.com"
+                                    placeholder={t('contact.emailPlaceholder')}
                                 />
                             </div>
 
                             <div>
                                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                                    Message
+                                    {t('contact.message')}
                                 </label>
                                 <textarea
                                     id="message"
@@ -176,8 +178,8 @@ export const Contact = () => {
                                     onChange={handleChange}
                                     required
                                     rows={6}
-                                    className="w-full px-4 py-3 rounded-xl bg-gray-900/40 backdrop-blur-xl border border-white/10 focus:border-purple-500 focus:outline-none text-white placeholder-gray-500 transition-all resize-none"
-                                    placeholder="Tell me about your project..."
+                                    className="w-full px-4 py-3 rounded-xl bg-gray-900/40 backdrop-blur-xl border border-white/10 focus:border-blue-500 focus:outline-none text-white placeholder-gray-500 transition-all resize-none"
+                                    placeholder={t('contact.messagePlaceholder')}
                                 />
                             </div>
 
@@ -185,7 +187,7 @@ export const Contact = () => {
                                 type="submit"
                                 className="btn btn-glow w-full"
                             >
-                                <span>Send Message</span>
+                                <span>{t('contact.send')}</span>
                                 <Send size={20} />
                             </button>
                         </form>
