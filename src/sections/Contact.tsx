@@ -106,7 +106,7 @@ export const Contact = () => {
                             <p className="text-sm text-gray-400 mb-4">Follow me on</p>
                             <div className="flex gap-4">
                                 <a
-                                    href="https://github.com"
+                                    href="https://github.com/KhnhMinh"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="w-12 h-12 rounded-lg bg-gray-900/40 backdrop-blur-xl border border-white/10 hover:border-white/20 flex items-center justify-center text-gray-400 hover:text-white transition-all group"
@@ -114,7 +114,7 @@ export const Contact = () => {
                                     <Github size={20} className="group-hover:scale-110 transition-transform" />
                                 </a>
                                 <a
-                                    href="https://linkedin.com"
+                                    href="https://www.linkedin.com/in/minh-le-khanh-892bbb365/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="w-12 h-12 rounded-lg bg-gray-900/40 backdrop-blur-xl border border-white/10 hover:border-white/20 flex items-center justify-center text-gray-400 hover:text-white transition-all group"
