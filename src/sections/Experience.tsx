@@ -5,9 +5,9 @@ const experiences = [
     {
         id: 1,
         title: 'Full-Stack Developer',
-        company: 'Docker Products',
-        location: 'Remote',
-        period: '2024 - Present',
+        company: 'C-OpenAI',
+        location: 'At company',
+        period: 'Sep 2025 - Present',
         description: 'Working on Docker products, building scalable full-stack applications and contributing to containerization technologies. Focus on creating reliable, well-designed systems that solve real-world problems.',
         achievements: [
             'Developed and maintained Docker-based applications serving production environments',
@@ -19,10 +19,10 @@ const experiences = [
     },
     {
         id: 2,
-        title: 'Software Engineer',
-        company: 'Engineering Team',
-        location: 'Remote',
-        period: '2023 - 2024',
+        title: 'Full-Stack Developer',
+        company: 'CMC ATI',
+        location: 'At company',
+        period: '2023 - Sep 2025',
         description: 'Built full-stack applications with emphasis on system design and engineering best practices. Focused on creating dependable systems that are both functional and maintainable.',
         achievements: [
             'Designed and implemented scalable backend architectures',
