@@ -10,7 +10,6 @@ const projects = [
         image: '🛒',
         gradient: 'from-blue-500 to-cyan-500',
         github: '#',
-        live: '#',
     },
     {
         id: 2,
@@ -20,7 +19,6 @@ const projects = [
         image: '🤖',
         gradient: 'from-cyan-500 to-blue-500',
         github: '#',
-        live: '#',
     },
     {
         id: 3,
@@ -30,7 +28,6 @@ const projects = [
         image: '📋',
         gradient: 'from-orange-500 to-red-500',
         github: '#',
-        live: '#',
     },
     {
         id: 4,
@@ -40,7 +37,6 @@ const projects = [
         image: '₿',
         gradient: 'from-green-500 to-emerald-500',
         github: '#',
-        live: '#',
     },
     {
         id: 5,
@@ -50,7 +46,6 @@ const projects = [
         image: '📊',
         gradient: 'from-blue-500 to-sky-500',
         github: '#',
-        live: '#',
     },
     {
         id: 6,
@@ -60,7 +55,6 @@ const projects = [
         image: '💪',
         gradient: 'from-red-500 to-orange-500',
         github: '#',
-        live: '#',
     },
 ];
 
@@ -116,7 +110,7 @@ export const Projects = () => {
                                     </p>
 
                                     {/* Tech Stack */}
-                                    <div className="flex flex-wrap gap-2 mb-6">
+                                    <div className="flex flex-wrap gap-2 mb-14">
                                         {project.tech.map((tech) => (
                                             <span
                                                 key={tech}
@@ -126,28 +120,19 @@ export const Projects = () => {
                                             </span>
                                         ))}
                                     </div>
+                                </div>
 
-                                    {/* Links */}
-                                    <div className="flex items-center gap-4">
-                                        <a
-                                            href={project.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group/link"
-                                        >
-                                            <Github size={16} />
-                                            <span>Code</span>
-                                        </a>
-                                        <a
-                                            href={project.live}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group/link"
-                                        >
-                                            <ExternalLink size={16} />
-                                            <span>Live</span>
-                                        </a>
-                                    </div>
+                                {/* Code Link Button pinned bottom-right */}
+                                <div className="absolute bottom-4 right-4 z-20">
+                                    <a
+                                        href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors group/link bg-black/60 px-3 py-2 rounded-full shadow-lg"
+                                    >
+                                        <Github size={16} />
+                                        <span>Code</span>
+                                    </a>
                                 </div>
 
                                 {/* Hover Effect */}

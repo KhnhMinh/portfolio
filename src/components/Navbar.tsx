@@ -41,7 +41,7 @@ export const Navbar = () => {
           `}
                 >
                     <a href="#" className="text-xl font-bold tracking-tight">
-                        Minh<span className="text-blue-500">.</span>
+                        LeKhanhMinh<span className="text-blue-500">.</span>
                     </a>
 
                     {/* Desktop */}
@@ -62,8 +62,8 @@ export const Navbar = () => {
                         <div className="w-[1px] h-6 bg-white/10"></div>
 
                         <div className="flex gap-4">
-                            <SocialLink href="https://github.com" icon={<Github size={18} />} />
-                            <SocialLink href="https://linkedin.com" icon={<Linkedin size={18} />} />
+                            <SocialLink href="https://github.com/KhnhMinh" icon={<Github size={18} />} />
+                            <SocialLink href="https://www.linkedin.com/in/minh-le-khanh-892bbb365/" icon={<Linkedin size={18} />} />
                         </div>
                     </div>
 
