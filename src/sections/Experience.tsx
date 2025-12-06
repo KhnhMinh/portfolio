@@ -4,7 +4,7 @@ import { Briefcase, Calendar, MapPin, ArrowRight } from 'lucide-react';
 const experiences = [
     {
         id: 1,
-        title: 'Full-Stack Developer',
+        title: 'Software Engineer',
         company: 'C-OpenAI',
         location: 'At company',
         period: 'Sep 2025 - Present',
@@ -19,7 +19,7 @@ const experiences = [
     },
     {
         id: 2,
-        title: 'Full-Stack Developer',
+        title: 'Software Engineer',
         company: 'CMC ATI',
         location: 'At company',
         period: '2023 - Sep 2025',
