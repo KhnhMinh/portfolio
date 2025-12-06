@@ -65,7 +65,7 @@ export const Contact = () => {
 
                         <div className="space-y-4">
                             <a
-                                href="mailto:lekhanhminh@example.com"
+                                href="mailto:khnhminh.le@gmail.com"
                                 className="flex items-center gap-4 p-4 rounded-xl bg-gray-900/40 backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all group"
                             >
                                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center group-hover:scale-110 transition-transform">
