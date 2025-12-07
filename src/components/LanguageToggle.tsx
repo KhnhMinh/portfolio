@@ -11,12 +11,12 @@ export const LanguageToggle = () => {
         >
             {language === 'en' ? (
                 <>
-                    <img src="/src/assets/icons/flag-vn.svg" alt="Vietnamese flag" className="w-5 h-5" aria-hidden="true" />
+                    <img src="/icons/flag-vn.svg" alt="Vietnamese flag" className="w-5 h-5" aria-hidden="true" />
                     VI
                 </>
             ) : (
                 <>
-                    <img src="/src/assets/icons/flag-uk.svg" alt="UK flag" className="w-5 h-5" aria-hidden="true" />
+                    <img src="/icons/flag-uk.svg" alt="UK flag" className="w-5 h-5" aria-hidden="true" />
                     EN
                 </>
             )}

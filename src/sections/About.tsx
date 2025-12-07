@@ -4,7 +4,7 @@ import { useLanguage } from '../hooks/useLanguage';
 
 const skills = [
     { name: 'Full-Stack Development', icon: <Code size={24} />, color: 'from-orange-500 to-orange-400' },
-    { name: 'Docker & DevOps', icon: <img src="src/assets/docker-svgrepo-com.svg" alt="Docker" />, color: 'from-sky-500 to-blue-500' },
+    { name: 'Docker & DevOps', icon: <img src="docker-svgrepo-com.svg" alt="Docker" />, color: 'from-sky-500 to-blue-500' },
     { name: 'AI & Machine Learning', icon: <Zap size={24} />, color: 'from-cyan-500 to-teal-500' },
     { name: 'System Design', icon: <Target size={24} />, color: 'from-blue-400 to-indigo-500' },
 ];
