@@ -9,11 +9,9 @@ export const Hero = () => {
     const roles = [
         t('role.masters'),
         t('role.bachelors'),
-        t('role.researcher'),
         t('role.engineer'),
         t('role.developer'),
         t('role.ai'),
-        t('role.solver'),
     ];
     return (
         <section id="home" className="min-h-screen flex items-center relative pt-20">
