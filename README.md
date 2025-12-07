@@ -1,75 +1,80 @@
-# React + TypeScript + Vite
+# Hướng dẫn sử dụng dự án React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Yêu cầu môi trường
 
-Currently, two official plugins are available:
+- Node.js >= 18.x
+- npm >= 9.x hoặc yarn/pnpm
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Cài đặt
 
-## React Compiler
+Clone repo về máy:
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone <repo-url>
+cd <tên-thư-mục-dự-án>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Cài đặt dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+# hoặc:
+yarn install
+# hoặc:
+pnpm install
 ```
+
+## Chạy dự án ở môi trường phát triển
+
+```bash
+npm run dev
+# hoặc:
+yarn dev
+# hoặc:
+pnpm dev
+```
+
+Sau khi chạy, truy cập vào `http://localhost:5173` (hoặc port mà Vite thông báo trên terminal).
+
+## Build dự án cho production
+
+```bash
+npm run build
+# hoặc:
+yarn build
+# hoặc:
+pnpm build
+```
+
+Kết quả build nằm ở thư mục `dist/`.
+
+## Chạy thử production build
+
+```bash
+npm run preview
+# hoặc:
+yarn preview
+# hoặc:
+pnpm preview
+```
+
+## Các lệnh lint & format
+
+- Kiểm tra code với eslint:
+  ```bash
+  npm run lint
+  ```
+
+- Format code với prettier:
+  ```bash
+  npm run format
+  ```
+
+## Ghi chú thêm
+
+- Dự án này sử dụng React, TypeScript, Vite.
+- Có cấu hình sẵn ESLint cho project.
+- Có hỗ trợ hot module replacement (HMR).
+- Nếu bạn muốn cấu hình sâu hơn về ESLint, hãy mở file `eslint.config.js` để điều chỉnh.
+
+Mọi thắc mắc thêm xin vui lòng liên hệ maintainer hoặc xem tài liệu chi tiết tại từng file cấu hình/tệp source.
