@@ -15,7 +15,6 @@ export const translations = {
         
         // Roles
         'role.masters': 'a Master\'s Candidate',
-        'role.bachelors': 'a Bachelor\'s Graduate',
         'role.engineer': 'a Software Engineer',
         'role.developer': 'a Full-Stack Developer',
         'role.ai': 'an AI Enthusiast',
@@ -83,7 +82,6 @@ export const translations = {
         
         // Roles
         'role.masters': 'Học viên Thạc sĩ',
-        'role.bachelors': 'Cử nhân Đại học',
         'role.engineer': 'Kỹ sư Phần mềm',
         'role.developer': 'Lập trình viên Full-Stack',
         'role.ai': 'Người đam mê AI',

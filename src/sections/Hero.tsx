@@ -8,7 +8,6 @@ export const Hero = () => {
     
     const roles = [
         t('role.masters'),
-        t('role.bachelors'),
         t('role.engineer'),
         t('role.developer'),
         t('role.ai'),
