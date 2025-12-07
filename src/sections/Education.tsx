@@ -12,7 +12,7 @@ const education = [
         location: 'Hanoi, Vietnam',
         description: 'Currently pursuing a Master\'s degree in Computer Science, focusing on advanced research and specialized knowledge in the field.',
         skills: ['Research Skills'],
-        logo: '🎓',
+        logo: <img src="/logos/huet-logo.svg" alt="HUET Logo" style={{ width: 40, height: 40, objectFit: 'contain' }} />,
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const education = [
         location: 'Hanoi, Vietnam',
         description: 'Completed Bachelor\'s degree in Information and Communication Technology, gaining comprehensive knowledge in software engineering, computer systems, and modern technologies.',
         skills: ['Research Skills', 'Software Engineering', 'Computer Systems'],
-        logo: '📚',
+        logo: <img src="/logos/usth-logo.webp" alt="USTH Logo" style={{ width: 40, height: 40, objectFit: 'contain' }} />,
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ const education = [
         location: 'Hanoi, Vietnam',
         description: 'Graduated from a specialized high school for gifted students, building a strong foundation in mathematics, science, and critical thinking.',
         skills: ['Mathematics', 'Science', 'Critical Thinking'],
-        logo: '🏫',
+        logo: <img src="/logos/csp-logo.png" alt="CSP Logo" style={{ width: 40, height: 40, objectFit: 'contain' }} />,
     },
 ];
 
@@ -88,7 +88,7 @@ export const Education = () => {
                                     <div className="relative z-10">
                                         {/* Header */}
                                         <div className="flex items-start gap-4 mb-4">
-                                            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-2xl flex-shrink-0">
+                                            <div className="w-12 h-12 rounded-lg bg-gradient-to-br flex items-center justify-center text-2xl flex-shrink-0">
                                                 {edu.logo}
                                             </div>
                                             <div className="flex-1">

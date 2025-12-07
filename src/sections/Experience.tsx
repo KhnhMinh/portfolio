@@ -7,38 +7,43 @@ const experiences = [
         id: 1,
         title: 'Software Engineer',
         company: 'C-OpenAI',
-        location: 'At company',
+        location: 'Hanoi',
         period: 'Sep 2025 - Present',
-        description: 'Working on Docker products, building scalable full-stack applications and contributing to containerization technologies. Focus on creating reliable, well-designed systems that solve real-world problems.',
+        description: 'Participated in developing strategic products to support the search, review, and management of legal documents. Focused on optimizing data processing workflows, enhancing user experience for legal information retrieval, and solving practical problems related to legal operations.',
         achievements: [
-            'Developed and maintained Docker-based applications serving production environments',
-            'Collaborated on improving container orchestration and deployment workflows',
-            'Implemented robust backend services with focus on reliability and performance',
-            'Worked with cross-functional teams to deliver high-quality software solutions',
+            'Developed and maintained large-scale software systems for legal document search and review',
+            'Collaborated with legal professionals to identify, analyze, and optimize business processes',
+            'Designed technical solutions to automate the processing, aggregation, and classification of legal documents',
+            'Resolved practical issues arising in the daily operation of legal research and information systems',
         ],
-        tech: ['Docker', 'React', 'TypeScript', 'Node.js', 'Python', 'PostgreSQL'],
+        tech: ['React', 'Django', 'Vue', 'Angular', 'Postgres', 'MinIO', 'MongoDB', 'AWS', 'TypeScript', 'Docker'],
     },
     {
         id: 2,
         title: 'Software Engineer',
         company: 'CMC ATI',
-        location: 'At company',
+        location: 'Hanoi',
         period: '2023 - Sep 2025',
-        description: 'Built full-stack applications with emphasis on system design and engineering best practices. Focused on creating dependable systems that are both functional and maintainable.',
+        description: 'Contributed to the development of strategic products to improve business processes and solve practical problems. Focused on automating workflows and operational efficiency through advanced AI technologies and process optimization.',
         achievements: [
-            'Designed and implemented scalable backend architectures',
-            'Developed responsive frontend applications with modern frameworks',
-            'Optimized database queries and improved application performance',
-            'Participated in code reviews and mentored junior developers',
+            'Developed applications for automating and optimizing business workflows',
+            'Integrated AI technologies including OCR, TTS, and STT into enterprise systems',
+            'Built specialized chatbots for business process support and information assistance',
+            'Designed and implemented solutions to enhance operational efficiency and accuracy',
+            'Independently developed modules for the separation of legal text content (structuring, extracting, and managing official legal documents)',
+            'Built and optimized features for the processing, searching, and review of legal documents, improving accuracy and ease-of-use for end-users'
         ],
-        tech: ['React', 'Node.js', 'MongoDB', 'AWS', 'TypeScript', 'Docker'],
+        tech: ['React', 'Django', 'Vue', 'Angular', 'Postgres', 'MinIO', 'MongoDB', 'AWS', 'TypeScript', 'Docker'],
     },
 ];
 
 const skills = [
     {
         category: 'Full-Stack Development',
-        items: ['React', 'TypeScript', 'Node.js', 'Next.js', 'Python', 'REST APIs', 'GraphQL']
+        items: [
+            'React', 'Angular', 'Vue', 'TypeScript', 'Node.js', 'Next.js', 
+            'Python', 'Django', 'DRF', 'REST APIs', 'GraphQL', 'Postman'
+        ]
     },
     {
         category: 'Docker & DevOps',
