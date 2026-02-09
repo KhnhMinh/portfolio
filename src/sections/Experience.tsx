@@ -17,6 +17,7 @@ const experiences = [
             'Collaborated with cross-functional teams to deliver stable, user-friendly authentication experiences',
         ],
         tech: ['React', 'FastAPI', 'MySQL', 'FPTCloud', 'MongoDB', 'Docker', 'Otel-Collector'],
+        logo: '/logos/companies/logo_fci.png',
     },
     {
         id: 2,
@@ -32,6 +33,7 @@ const experiences = [
             'Resolved practical issues arising in the daily operation of legal research and information systems',
         ],
         tech: ['React', 'Vue', 'Angular', 'Django', 'FastAPI', 'Postgres', 'MinIO', 'MongoDB', 'AWS', 'Docker'],
+        logo: '/logos/companies/logo_copenai.png',
     },
     {
         id: 3,
@@ -49,6 +51,7 @@ const experiences = [
             'Built and optimized features for the processing, searching, and review of legal documents, improving accuracy and ease-of-use for end-users'
         ],
         tech: ['React', 'Vue', 'Angular','Django', 'Postgres', 'MinIO', 'Docker'],
+        logo: '/logos/companies/logo_cmcati.png',
     },
     {
         id: 4,
@@ -64,6 +67,7 @@ const experiences = [
             'Gained valuable foundational experience in teaching and mentoring, providing a strong starting point for my career'
         ],
         tech: ['Python', 'React', 'Teaching', 'Management'],
+        logo: '/logos/companies/logo_vti_academy.png',
     },
 ];
 
