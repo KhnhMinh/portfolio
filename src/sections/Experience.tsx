@@ -6,9 +6,24 @@ const experiences = [
     {
         id: 1,
         title: 'Software Engineer',
+        company: 'FPT Smart Cloud - FCI',
+        location: 'Hanoi',
+        period: 'Jan 2026 - Present',
+        description: 'Developed and maintained user authentication and biometric solutions, focusing on secure and seamless identity verification. Solutions included OCR for ID documents, face matching, and active liveness checks to ensure the authenticity of users during the verification process.',
+        achievements: [
+            'Designed and implemented biometric authentication modules integrating face recognition, liveness detection, and ID document OCR',
+            'Developed end-to-end eKYC and authentication workflows ensuring regulatory compliance and robust security',
+            'Integrated modern security protocols (OAuth2, OpenID Connect) to enhance user authentication across platforms',
+            'Collaborated with cross-functional teams to deliver stable, user-friendly authentication experiences',
+        ],
+        tech: ['React', 'FastAPI', 'MySQL', 'FPTCloud', 'MongoDB', 'Docker', 'Otel-Collector'],
+    },
+    {
+        id: 2,
+        title: 'Software Engineer',
         company: 'C-OpenAI',
         location: 'Hanoi',
-        period: 'Sep 2025 - Present',
+        period: 'Sep 2025 - Jan 2026',
         description: 'Participated in developing strategic products to support the search, review, and management of legal documents. Focused on optimizing data processing workflows, enhancing user experience for legal information retrieval, and solving practical problems related to legal operations.',
         achievements: [
             'Developed and maintained large-scale software systems for legal document search and review',
@@ -16,10 +31,10 @@ const experiences = [
             'Designed technical solutions to automate the processing, aggregation, and classification of legal documents',
             'Resolved practical issues arising in the daily operation of legal research and information systems',
         ],
-        tech: ['React', 'Django', 'Vue', 'Angular', 'Postgres', 'MinIO', 'MongoDB', 'AWS', 'TypeScript', 'Docker'],
+        tech: ['React', 'Vue', 'Angular', 'Django', 'FastAPI', 'Postgres', 'MinIO', 'MongoDB', 'AWS', 'Docker'],
     },
     {
-        id: 2,
+        id: 3,
         title: 'Software Engineer',
         company: 'CMC ATI',
         location: 'Hanoi',
@@ -33,7 +48,22 @@ const experiences = [
             'Independently developed modules for the separation of legal text content (structuring, extracting, and managing official legal documents)',
             'Built and optimized features for the processing, searching, and review of legal documents, improving accuracy and ease-of-use for end-users'
         ],
-        tech: ['React', 'Django', 'Vue', 'Angular', 'Postgres', 'MinIO', 'MongoDB', 'AWS', 'TypeScript', 'Docker'],
+        tech: ['React', 'Vue', 'Angular','Django', 'Postgres', 'MinIO', 'Docker'],
+    },
+    {
+        id: 4,
+        title: 'Teaching and Classroom Management Assistant',
+        company: 'VTI Academy',
+        location: 'Hanoi',
+        period: '2023 - Sep 2025',
+        description: 'Assisted in teaching, organizing, and managing programming classes, supporting both instruction and classroom activities.',
+        achievements: [
+            'Assisted in organizing and managing programming classes focused on Python and Frontend (React) development',
+            'Actively supported instructional activities and helped facilitate student learning and engagement',
+            'Participated in class organization, student management, and logistical support for coursework',
+            'Gained valuable foundational experience in teaching and mentoring, providing a strong starting point for my career'
+        ],
+        tech: ['Python', 'React', 'Teaching', 'Management'],
     },
 ];
 

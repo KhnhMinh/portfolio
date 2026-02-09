@@ -22,10 +22,10 @@ export const translations = {
         
         // About
         'about.title': 'About Me',
-        'about.subtitle': 'Passionate developer crafting digital experiences with modern technologies',
-        'about.intro1': 'Hello, I\'m Le Khanh Minh. I\'m a software engineer who enjoys building systems that are dependable, thoughtfully designed, and genuinely useful. I approach my work with professionalism and curiosity, but I also believe that a positive attitude and a sense of humor make collaboration more effective and enjoyable.',
-        'about.intro2': 'I\'m currently expanding my interests into AI and machine learning, exploring how intelligent tools can enhance real-world applications and improve the way teams build and operate software. I appreciate challenges that push me to grow, refine my thinking, and learn new perspectives.',
-        'about.intro3': 'I value clear communication, kindness, and a practical engineering mindset. Whether I\'m solving a complex technical problem or working with teammates, I aim to bring both competence and approachability. I\'m always open to connecting with people who share the same drive for learning, building, and creating meaningful work.',
+        'about.subtitle': 'Developer passionate about modern technology and digital experiences.',
+        'about.intro1': 'Hello, I\'m Le Khanh Minh, a software engineer who enjoys building reliable, useful, and polished systems. I work professionally and with curiosity, and believe a positive attitude makes the work more effective and enjoyable.',
+        'about.intro2': 'These days, I\'m excited about AI and machine learning, exploring how they can enhance applications and streamline workflows. I welcome challenges that help me grow and broaden my perspective.',
+        'about.intro3': 'I value clarity, kindness, and pragmatism in engineering. Whether tackling problems or collaborating with teammates, I always strive to be approachable and proactive. I\'m open to connecting with fellow learners, builders, and those who want to create real value.',
         
         // Projects
         'projects.title': 'Featured Projects',
@@ -89,10 +89,10 @@ export const translations = {
         
         // About
         'about.title': 'Về Tôi',
-        'about.subtitle': 'Lập trình viên đam mê tạo ra trải nghiệm kỹ thuật số với công nghệ hiện đại',
-        'about.intro1': 'Xin chào, tôi là Lê Khánh Minh. Tôi là một kỹ sư phần mềm thích xây dựng các hệ thống đáng tin cậy, được thiết kế cẩn thận và thực sự hữu ích. Tôi tiếp cận công việc với sự chuyên nghiệp và tò mò, nhưng tôi cũng tin rằng thái độ tích cực và khiếu hài hước làm cho sự hợp tác hiệu quả và thú vị hơn.',
-        'about.intro2': 'Hiện tại tôi đang mở rộng sở thích của mình sang AI và machine learning, khám phá cách các công cụ thông minh có thể nâng cao các ứng dụng thực tế và cải thiện cách các nhóm xây dựng và vận hành phần mềm. Tôi đánh giá cao những thách thức thúc đẩy tôi phát triển, tinh chỉnh suy nghĩ và học hỏi những quan điểm mới.',
-        'about.intro3': 'Tôi coi trọng giao tiếp rõ ràng, lòng tốt và tư duy kỹ thuật thực tế. Dù đang giải quyết một vấn đề kỹ thuật phức tạp hay làm việc với đồng đội, tôi luôn cố gắng mang lại cả năng lực và sự dễ tiếp cận. Tôi luôn sẵn sàng kết nối với những người có cùng động lực học hỏi, xây dựng và tạo ra công việc có ý nghĩa.',
+        'about.subtitle': 'Lập trình viên đam mê công nghệ hiện đại và trải nghiệm số.',
+        'about.intro1': 'Chào bạn, tôi là Lê Khánh Minh, kỹ sư phần mềm thích xây dựng hệ thống tin cậy, hữu ích và chỉn chu. Tôi làm việc chuyên nghiệp, tò mò, và tin rằng thái độ tích cực giúp làm việc hiệu quả, vui vẻ hơn.',
+        'about.intro2': 'Gần đây, tôi hứng thú với AI và machine learning, tìm hiểu cách nâng cấp ứng dụng và cải thiện quy trình làm việc. Tôi thích đón nhận thử thách để phát triển bản thân và mở rộng góc nhìn.',
+        'about.intro3': 'Tôi đề cao sự rõ ràng, tử tế và thực tế trong kỹ thuật. Dù giải quyết vấn đề hay phối hợp với đồng đội, tôi luôn cố gắng dễ gần và chủ động. Sẵn sàng kết nối với người cùng đam mê học hỏi, xây dựng và tạo giá trị.',
         
         // Projects
         'projects.title': 'Dự án Nổi bật',
