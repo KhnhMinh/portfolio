@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowDownRight, ArrowRight, Sparkles, User } from 'lucide-react';
 import { TypingAnimation } from '../components/TypingAnimation';
 import { useLanguage } from '../hooks/useLanguage';
 
@@ -9,7 +9,6 @@ export const Hero = () => {
     const roles = [
         t('role.masters'),
         t('role.engineer'),
-        t('role.developer'),
         t('role.ai'),
     ];
     return (
@@ -132,15 +131,21 @@ export const Hero = () => {
                             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                             className="absolute -bottom-4 -right-4 z-20"
                         >
-                            <div className="bg-black/60 backdrop-blur-md p-4 rounded-xl border border-white/10 flex items-center gap-3 shadow-xl">
-                                <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center p-1">
-                                    <span className="text-xl">🚀</span>
+                            <a
+                                href="#about"
+                                className="group flex items-center gap-3 rounded-xl border border-white/10 bg-black/60 p-4 shadow-xl backdrop-blur-md transition-all hover:border-blue-400/40 hover:bg-black/70"
+                            >
+                                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500/20 text-blue-300 transition-colors group-hover:bg-blue-500/30">
+                                    <User size={18} />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-400">Status</p>
-                                    <p className="font-bold text-white">Available</p>
+                                    <p className="text-xs text-gray-400">{t('nav.about')}</p>
+                                    <p className="flex items-center gap-2 font-bold text-white">
+                                        {t('about.title')}
+                                        <ArrowDownRight size={16} className="transition-transform group-hover:translate-y-[1px] group-hover:translate-x-[1px]" />
+                                    </p>
                                 </div>
-                            </div>
+                            </a>
                         </motion.div>
                     </div>
                 </motion.div>

@@ -15,10 +15,8 @@ export const translations = {
         
         // Roles
         'role.masters': 'a Master\'s Candidate',
-        'role.engineer': 'a Software Engineer',
-        'role.developer': 'a Full-Stack Developer',
-        'role.ai': 'an AI Enthusiast',
-        'role.solver': 'a Problem Solver',
+        'role.engineer': 'a Full-Stack Software Engineer',
+        'role.ai': 'an AI Engineer',
         
         // About
         'about.title': 'About Me',
@@ -26,6 +24,20 @@ export const translations = {
         'about.intro1': 'Hello, I\'m Le Khanh Minh, a software engineer who enjoys building reliable, useful, and polished systems. I work professionally and with curiosity, and believe a positive attitude makes the work more effective and enjoyable.',
         'about.intro2': 'These days, I\'m excited about AI and machine learning, exploring how they can enhance applications and streamline workflows. I welcome challenges that help me grow and broaden my perspective.',
         'about.intro3': 'I value clarity, kindness, and pragmatism in engineering. Whether tackling problems or collaborating with teammates, I always strive to be approachable and proactive. I\'m open to connecting with fellow learners, builders, and those who want to create real value.',
+        'about.skills.fullStack': 'Building modern web applications with scalable frontend and backend architectures.',
+        'about.skills.backend': 'Building intelligent applications powered by LLMs, AI agents, and modern machine learning technologies.',
+        'about.skills.cloud': 'Deploying, monitoring, and maintaining reliable production environments.',
+        'about.skills.systemDesign': 'Designing scalable, maintainable, and resilient software architectures.',
+        'about.tech.title': 'Tech Stack',
+        'about.tech.software': 'Software Engineering',
+        'about.tech.software.database': 'Database',
+        'about.tech.software.backend': 'Backend',
+        'about.tech.software.frontend': 'Frontend',
+        'about.tech.software.foundation': 'Engineering Foundations',
+        'about.tech.ai': 'AI & Machine Learning',
+        'about.tech.cloud': 'Cloud & Infrastructure',
+        'about.tech.systemDesign': 'System Design',
+        'about.tech.skillsCount': 'skills, and I am still learning more',
         
         // Projects
         'projects.title': 'Featured Projects',
@@ -82,10 +94,8 @@ export const translations = {
         
         // Roles
         'role.masters': 'Học viên Thạc sĩ',
-        'role.engineer': 'Kỹ sư Phần mềm',
-        'role.developer': 'Lập trình viên Full-Stack',
-        'role.ai': 'Người đam mê AI',
-        'role.solver': 'Người giải quyết vấn đề',
+        'role.engineer': 'Kỹ sư Phần mềm Full-Stack',
+        'role.ai': 'Kỹ sư AI',
         
         // About
         'about.title': 'Về Tôi',
@@ -93,6 +103,20 @@ export const translations = {
         'about.intro1': 'Chào bạn, tôi là Lê Khánh Minh, kỹ sư phần mềm thích xây dựng hệ thống tin cậy, hữu ích và chỉn chu. Tôi làm việc chuyên nghiệp, tò mò, và tin rằng thái độ tích cực giúp làm việc hiệu quả, vui vẻ hơn.',
         'about.intro2': 'Gần đây, tôi hứng thú với AI và machine learning, tìm hiểu cách nâng cấp ứng dụng và cải thiện quy trình làm việc. Tôi thích đón nhận thử thách để phát triển bản thân và mở rộng góc nhìn.',
         'about.intro3': 'Tôi đề cao sự rõ ràng, tử tế và thực tế trong kỹ thuật. Dù giải quyết vấn đề hay phối hợp với đồng đội, tôi luôn cố gắng dễ gần và chủ động. Sẵn sàng kết nối với người cùng đam mê học hỏi, xây dựng và tạo giá trị.',
+        'about.skills.fullStack': 'Xây dựng ứng dụng web hiện đại với kiến trúc frontend và backend có khả năng mở rộng.',
+        'about.skills.backend': 'Xây dựng các ứng dụng thông minh được hỗ trợ bởi LLM, AI agents và các công nghệ machine learning hiện đại.',
+        'about.skills.cloud': 'Triển khai, giám sát và vận hành các môi trường production đáng tin cậy.',
+        'about.skills.systemDesign': 'Thiết kế kiến trúc phần mềm có khả năng mở rộng, dễ bảo trì và bền vững.',
+        'about.tech.title': 'Tech Stack',
+        'about.tech.software': 'Kỹ thuật Phần mềm',
+        'about.tech.software.database': 'Cơ sở dữ liệu',
+        'about.tech.software.backend': 'Backend',
+        'about.tech.software.frontend': 'Frontend',
+        'about.tech.software.foundation': 'Nền tảng Kỹ thuật',
+        'about.tech.ai': 'AI & Machine Learning',
+        'about.tech.cloud': 'Cloud & Hạ tầng',
+        'about.tech.systemDesign': 'Thiết kế Hệ thống',
+        'about.tech.skillsCount': 'kỹ năng, và tôi vẫn đang học thêm',
         
         // Projects
         'projects.title': 'Dự án Nổi bật',
@@ -134,4 +158,3 @@ export const translations = {
         'footer.built': 'Được xây dựng với',
     },
 };
-
