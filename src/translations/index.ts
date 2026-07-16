@@ -21,9 +21,9 @@ export const translations = {
         // About
         'about.title': 'About Me',
         'about.subtitle': 'Developer passionate about modern technology and digital experiences.',
-        'about.intro1': 'Hello, I\'m Le Khanh Minh, a software engineer who enjoys building reliable, useful, and polished systems. I work professionally and with curiosity, and believe a positive attitude makes the work more effective and enjoyable.',
-        'about.intro2': 'These days, I\'m excited about AI and machine learning, exploring how they can enhance applications and streamline workflows. I welcome challenges that help me grow and broaden my perspective.',
-        'about.intro3': 'I value clarity, kindness, and pragmatism in engineering. Whether tackling problems or collaborating with teammates, I always strive to be approachable and proactive. I\'m open to connecting with fellow learners, builders, and those who want to create real value.',
+        'about.intro1': 'I\'m Le Khanh Minh, a software engineer working across web applications, backend services, and internal tools. Most of my recent work has involved authentication flows, legal-document systems, workflow automation, and AI-powered product features.',
+        'about.intro2': 'I spend a lot of time turning messy business requirements into software that people can actually use day to day, whether that means building APIs, shaping data flows, improving search and review experiences, or integrating OCR, LLM, and other machine learning capabilities into products.',
+        'about.intro3': 'I like features that stay simple but do the job well, interfaces that feel clean without becoming dull, and systems that are structured clearly enough to maintain and extend without drama. I am also interested in bringing AI into products in ways that are genuinely useful instead of decorative.',
         'about.skills.fullStack': 'Building modern web applications with scalable frontend and backend architectures.',
         'about.skills.backend': 'Building intelligent applications powered by LLMs, AI agents, and modern machine learning technologies.',
         'about.skills.cloud': 'Deploying, monitoring, and maintaining reliable production environments.',
@@ -50,6 +50,9 @@ export const translations = {
         'experience.subtitle': 'A timeline of my professional journey, highlighting key roles and achievements.',
         'experience.journey': 'Career Journey',
         'experience.skills': 'Skills & Expertise',
+        'experience.showDetails': 'Flip for details',
+        'experience.showSummary': 'Flip back to summary',
+        'experience.hoverHint': 'Click to view details',
         
         // Education
         'education.title': 'Education',
@@ -100,9 +103,9 @@ export const translations = {
         // About
         'about.title': 'Về Tôi',
         'about.subtitle': 'Lập trình viên đam mê công nghệ hiện đại và trải nghiệm số.',
-        'about.intro1': 'Chào bạn, tôi là Lê Khánh Minh, kỹ sư phần mềm thích xây dựng hệ thống tin cậy, hữu ích và chỉn chu. Tôi làm việc chuyên nghiệp, tò mò, và tin rằng thái độ tích cực giúp làm việc hiệu quả, vui vẻ hơn.',
-        'about.intro2': 'Gần đây, tôi hứng thú với AI và machine learning, tìm hiểu cách nâng cấp ứng dụng và cải thiện quy trình làm việc. Tôi thích đón nhận thử thách để phát triển bản thân và mở rộng góc nhìn.',
-        'about.intro3': 'Tôi đề cao sự rõ ràng, tử tế và thực tế trong kỹ thuật. Dù giải quyết vấn đề hay phối hợp với đồng đội, tôi luôn cố gắng dễ gần và chủ động. Sẵn sàng kết nối với người cùng đam mê học hỏi, xây dựng và tạo giá trị.',
+        'about.intro1': 'Tôi là Lê Khánh Minh, một kỹ sư phần mềm làm việc trên các ứng dụng web, dịch vụ backend và công cụ nội bộ. Phần lớn công việc gần đây của tôi xoay quanh luồng xác thực, hệ thống văn bản pháp lý, tự động hóa quy trình và các tính năng sản phẩm có ứng dụng AI.',
+        'about.intro2': 'Tôi dành khá nhiều thời gian để biến những yêu cầu nghiệp vụ còn rối thành phần mềm có thể dùng hằng ngày, từ việc xây API, tổ chức luồng dữ liệu, cải thiện trải nghiệm tìm kiếm và rà soát, cho đến tích hợp OCR, LLM và các thành phần machine learning vào sản phẩm.',
+        'about.intro3': 'Tôi thích những tính năng đơn giản nhưng làm việc hiệu quả, giao diện tối giản cho người dùng nhưng không đơn điệu, và hệ thống được tổ chức đủ rõ để dễ bảo trì và mở rộng. Tôi cũng hứng thú với việc đưa AI vào sản phẩm theo cách thực sự hữu ích, thay vì chỉ để cho có.',
         'about.skills.fullStack': 'Xây dựng ứng dụng web hiện đại với kiến trúc frontend và backend có khả năng mở rộng.',
         'about.skills.backend': 'Xây dựng các ứng dụng thông minh được hỗ trợ bởi LLM, AI agents và các công nghệ machine learning hiện đại.',
         'about.skills.cloud': 'Triển khai, giám sát và vận hành các môi trường production đáng tin cậy.',
@@ -129,6 +132,9 @@ export const translations = {
         'experience.subtitle': 'Dòng thời gian hành trình chuyên nghiệp của tôi, nêu bật các vai trò và thành tựu quan trọng.',
         'experience.journey': 'Hành trình Sự nghiệp',
         'experience.skills': 'Kỹ năng & Chuyên môn',
+        'experience.showDetails': 'Lật thẻ xem chi tiết',
+        'experience.showSummary': 'Lật lại bản tóm tắt',
+        'experience.hoverHint': 'Bấm để xem chi tiết',
         
         // Education
         'education.title': 'Học vấn',

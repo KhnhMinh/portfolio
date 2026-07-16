@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../hooks/useLanguage';
 
@@ -22,6 +23,10 @@ const experiences = [
         period: {
             en: 'Jan 2026 - Present',
             vi: '01/2026 - Hiện tại'
+        },
+        summary: {
+            en: 'Making online identity fraudsters have a much harder day with eKYC, OCR, and biometric checks.',
+            vi: 'Làm các cao thủ gian lận xác thực trực tuyến phải khổ sở với eKYC, OCR và sinh trắc học.'
         },
         description: {
             en: 'Developed and maintained user authentication and biometric solutions, focusing on secure and seamless identity verification. Solutions included OCR for ID documents, face matching, and active liveness checks to ensure the authenticity of users during the verification process.',
@@ -63,6 +68,10 @@ const experiences = [
             en: 'Sep 2025 - Jan 2026',
             vi: '09/2025 - 01/2026'
         },
+        summary: {
+            en: 'Helped legal teams stop drowning in documents by making search, review, and processing far less painful.',
+            vi: 'Giúp đội pháp chế bớt ngộp trong đống văn bản bằng cách làm phần tìm kiếm, rà soát và xử lý đỡ đau đầu hơn nhiều.'
+        },
         description: {
             en: 'Participated in developing strategic products to support the search, review, and management of legal documents. Focused on optimizing data processing workflows, enhancing user experience for legal information retrieval, and solving practical problems related to legal operations.',
             vi: 'Tham gia phát triển các sản phẩm chiến lược phục vụ tìm kiếm, rà soát và quản lý văn bản pháp lý. Tập trung tối ưu quy trình xử lý dữ liệu, nâng cao trải nghiệm tra cứu thông tin pháp lý và giải quyết các bài toán thực tế trong vận hành nghiệp vụ pháp chế.'
@@ -102,6 +111,10 @@ const experiences = [
         period: {
             en: '2023 - Sep 2025',
             vi: '2023 - 09/2025'
+        },
+        summary: {
+            en: 'Spent quality time teaching enterprise systems to read, listen, talk, and stop making operations unnecessarily dramatic.',
+            vi: 'Dành kha kha thời gian dạy hệ thống doanh nghiệp biết đọc, biết nghe, biết nói, và bớt làm khổ đội vận hành.'
         },
         description: {
             en: 'Contributed to the development of strategic products to improve business processes and solve practical problems. Focused on automating workflows and operational efficiency through advanced AI technologies and process optimization.',
@@ -150,6 +163,10 @@ const experiences = [
         period: {
             en: '2023 - Sep 2025',
             vi: '2023 - 09/2025'
+        },
+        summary: {
+            en: 'Kept programming classes running smoothly while helping students and debugging confusion before it spread.',
+            vi: 'Giữ lớp học lập trình chạy êm, hỗ trợ học viên và dập tắt những pha hoang mang trước khi chúng lan rộng.'
         },
         description: {
             en: 'Assisted in teaching, organizing, and managing programming classes, supporting both instruction and classroom activities.',
@@ -216,6 +233,14 @@ const getLocalizedText = (value: LocalizedText, language: 'en' | 'vi') => value[
 
 export const Experience = () => {
     const { t, language } = useLanguage();
+    const [expandedExperiences, setExpandedExperiences] = useState<Record<number, boolean>>({});
+
+    const toggleExperience = (id: number) => {
+        setExpandedExperiences((prev) => ({
+            ...prev,
+            [id]: !prev[id]
+        }));
+    };
 
     return (
         <section id="experience" className="section relative">
@@ -252,9 +277,16 @@ export const Experience = () => {
                                 transition={{ duration: 0.5, delay: index * 0.2 }}
                                 className="relative pl-24 pb-12 last:pb-0 group"
                             >
+                                {(() => {
+                                    const isExpanded = !!expandedExperiences[exp.id];
+
+                                    return (
+                                <>
                                 <div className="absolute left-6 top-2 w-4 h-4 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 border-4 border-[var(--bg-color)] z-10 group-hover:scale-125 transition-transform"></div>
 
-                                <div className="bg-gray-900/40 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all duration-300 relative overflow-hidden">
+                                <div
+                                    className="bg-gray-900/40 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-white/20 transition-all duration-300 relative overflow-hidden text-left"
+                                >
                                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                                     <div className="relative z-10">
@@ -279,18 +311,61 @@ export const Experience = () => {
                                             </div>
                                         </div>
 
-                                        <p className="text-gray-400 mb-4 leading-relaxed">
-                                            {getLocalizedText(exp.description, language)}
-                                        </p>
+                                        <motion.button
+                                            type="button"
+                                            onClick={() => toggleExperience(exp.id)}
+                                            whileHover={{ scale: 1.01 }}
+                                            className="group/summary relative mb-4 -mx-1 block w-[calc(100%+0.5rem)] overflow-hidden rounded-xl px-5 py-4 text-left transition-all duration-300 hover:bg-white/[0.03] hover:pb-14"
+                                        >
+                                            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-0 overflow-hidden opacity-0 transition-all duration-300 group-hover/summary:h-16 group-hover/summary:opacity-100">
+                                                <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/10 via-blue-400/6 to-transparent"></div>
+                                                <div className="absolute inset-x-6 bottom-0 h-px bg-gradient-to-r from-transparent via-cyan-300/25 to-transparent"></div>
+                                                <div className="relative flex h-full items-end justify-center pb-3 text-sm font-medium text-blue-100/95">
+                                                    {t('experience.hoverHint')}
+                                                </div>
+                                            </div>
 
-                                        <ul className="space-y-2 mb-4">
-                                            {exp.achievements.map((achievement, i) => (
-                                                <li key={i} className="flex items-start gap-2 text-sm text-gray-400">
-                                                    <ArrowRight size={16} className="text-blue-400 mt-0.5 flex-shrink-0" />
-                                                    <span>{getLocalizedText(achievement, language)}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                            <AnimatePresence mode="wait" initial={false}>
+                                                {isExpanded ? (
+                                                    <motion.div
+                                                        key={`detail-${exp.id}`}
+                                                        initial={{ opacity: 0, rotateX: -90, y: 12 }}
+                                                        animate={{ opacity: 1, rotateX: 0, y: 0 }}
+                                                        exit={{ opacity: 0, rotateX: 90, y: -12 }}
+                                                        transition={{ duration: 0.35, ease: 'easeInOut' }}
+                                                        style={{ transformOrigin: 'top center' }}
+                                                        className="relative z-10"
+                                                    >
+                                                        <p className="text-gray-400 mb-4 leading-relaxed">
+                                                            {getLocalizedText(exp.description, language)}
+                                                        </p>
+
+                                                        <ul className="space-y-2">
+                                                            {exp.achievements.map((achievement, i) => (
+                                                                <li key={i} className="flex items-start gap-2 text-sm text-gray-400">
+                                                                    <ArrowRight size={16} className="text-blue-400 mt-0.5 flex-shrink-0" />
+                                                                    <span>{getLocalizedText(achievement, language)}</span>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </motion.div>
+                                                ) : (
+                                                    <motion.div
+                                                        key={`summary-${exp.id}`}
+                                                        initial={{ opacity: 0, rotateX: 90, y: 12 }}
+                                                        animate={{ opacity: 1, rotateX: 0, y: 0 }}
+                                                        exit={{ opacity: 0, rotateX: -90, y: -12 }}
+                                                        transition={{ duration: 0.35, ease: 'easeInOut' }}
+                                                        style={{ transformOrigin: 'top center' }}
+                                                        className="relative z-10"
+                                                    >
+                                                        <p className="pr-2 text-gray-300 leading-relaxed">
+                                                            {getLocalizedText(exp.summary, language)}
+                                                        </p>
+                                                    </motion.div>
+                                                )}
+                                            </AnimatePresence>
+                                        </motion.button>
 
                                         <div className="flex flex-wrap gap-2 pt-4 border-t border-white/10">
                                             {exp.tech.map((tech) => (
@@ -304,6 +379,9 @@ export const Experience = () => {
                                         </div>
                                     </div>
                                 </div>
+                                </>
+                                    );
+                                })()}
                             </motion.div>
                         ))}
                     </div>
