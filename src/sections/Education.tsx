@@ -37,11 +37,12 @@ const education = [
         skills: [
             { en: 'Research Skills', vi: 'Kỹ năng Nghiên cứu' }
         ],
-        logo: (
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/15 text-sm font-bold text-blue-300">
-                PTIT
-            </div>
-        ),
+        // logo: (
+        //     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/15 text-sm font-bold text-blue-300">
+        //         PTIT
+        //     </div>
+        // ),
+        logo: <img src="/logos/Logo_PTIT_University.png" alt="PTIT Logo" style={{ width: 40, height: 40, objectFit: 'contain' }} />,
     },
     {
         id: 2,
